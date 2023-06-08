@@ -1,0 +1,17 @@
+CREATE TABLE RoomTemp (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  RoomNumber INT,
+  Day VARCHAR(10),
+  Temperature FLOAT
+);
+
+
+
+INSERT INTO RoomTemp (RoomNumber, Day, Temperature) VALUES (101, 'Monday', 22.5);
+INSERT INTO RoomTemp (RoomNumber, Day, Temperature) VALUES (101, 'Tuesday', 23.2);
+INSERT INTO RoomTemp (RoomNumber, Day, Temperature) VALUES (102, 'Monday', 21.8);
+INSERT INTO RoomTemp (RoomNumber, Day, Temperature) VALUES (102, 'Tuesday', 22.9);
+
+
+
+SELECT * FROM RoomTemp;
